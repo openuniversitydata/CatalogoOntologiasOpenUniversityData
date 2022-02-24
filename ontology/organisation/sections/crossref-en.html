@@ -1,0 +1,520 @@
+<h2 id="crossreference" class="list">Cross reference for Ontology for the representation of the organisation-related part of DevOps classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology for the representation of the organisation-related part of DevOps.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#Organisation"
+            title="http://w3id.org/devops-infra/organisation#Organisation">Organisation</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#Scope" title="http://w3id.org/devops-infra/organisation#Scope">Scope</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#Site" title="http://w3id.org/devops-infra/organisation#Site">Site</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#Tenant" title="http://w3id.org/devops-infra/organisation#Tenant">Tenant</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#Organisation">
+      <h3>Organisation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#Organisation</p>
+      <div class="comment">
+         <span class="markdown">This concept is generated as a specialisation of the concept Organization from the W3C Organization ontology, so as to refer to any type of organisation or deparment inside an organisation that may be responsible for specific resource, scopes, tenants, etc.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Organization">organization</span>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://w3id.org/devops-infra/organisation#managedBy"
+               title="http://w3id.org/devops-infra/organisation#managedBy">managed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#Scope">
+      <h3>Scope<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#Scope</p>
+      <div class="comment">
+         <span class="markdown">This is a term commonly used to describe the reasons why a Resource or Resource Group (a Configuration Item) are handled or grouped together. It may be related to a geographical area, to some business context, may be part of some common infrastructure form the cloud provider, etc. Generally, a Scope is managed by a specific Department, which is responsible for it.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://w3id.org/devops-infra/organisation#default"
+               title="http://w3id.org/devops-infra/organisation#default">default</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://w3id.org/devops-infra/organisation#managedBy"
+               title="http://w3id.org/devops-infra/organisation#managedBy">managed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/devops-infra/organisation#priority"
+               title="http://w3id.org/devops-infra/organisation#priority">priority</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://w3id.org/devops-infra/organisation#scopeType"
+               title="http://w3id.org/devops-infra/organisation#scopeType">scope type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://w3id.org/devops-infra/organisation#scope" title="http://w3id.org/devops-infra/organisation#scope">scope</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#Site">
+      <h3>Site<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#Site</p>
+      <div class="comment">
+         <span class="markdown">Tem term Site is commonly used to refer to a group of Configuration Itens (e.g., virtual and physical servers, services, applications, etc.) which are grouped together and connected in order to host specific applications, products or services in a cloud environment.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://w3id.org/devops-infra/core#Resource">resource</span>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://w3id.org/devops-infra/organisation#accessibleToTenant"
+               title="http://w3id.org/devops-infra/organisation#accessibleToTenant">accessible to tenant</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/devops-infra/organisation#timeZone"
+               title="http://w3id.org/devops-infra/organisation#timeZone">time zone</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#Tenant">
+      <h3>Tenant<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#Tenant</p>
+      <div class="comment">
+         <span class="markdown">A tenant is usually understood as a container for items of an Organisation in a cloud, such as users, domains, subscriptions, etc. In other words, it identifies a group of users (e.g., from an organisation) who share a common access with specific privileges to some resources (configuration items) in the cloud. These resources may be provided by a single or by multiple providers (e.g., AWS, HWS, etc.) and belong to a specifc domain (e.g., normally named after a geographical region, as this is commonly used to provision physical resources from specific data centers).</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://w3id.org/devops-infra/core#Resource">resource</span>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://w3id.org/devops-infra/organisation#account"
+               title="http://w3id.org/devops-infra/organisation#account">account</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://w3id.org/devops-infra/organisation#domain" title="http://w3id.org/devops-infra/organisation#domain">domain</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://w3id.org/devops-infra/organisation#password"
+               title="http://w3id.org/devops-infra/organisation#password">password</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://w3id.org/devops-infra/organisation#tenantStatus"
+               title="http://w3id.org/devops-infra/organisation#tenantStatus">tenant status</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://w3id.org/devops-infra/organisation#tenantType"
+               title="http://w3id.org/devops-infra/organisation#tenantType">tenant type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://w3id.org/devops-infra/organisation#accessibleToTenant"
+               title="http://w3id.org/devops-infra/organisation#accessibleToTenant">accessible to tenant</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#accessibleToTenant"
+            title="http://w3id.org/devops-infra/organisation#accessibleToTenant">accessible to tenant</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#managedBy"
+            title="http://w3id.org/devops-infra/organisation#managedBy">managed by</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#scope" title="http://w3id.org/devops-infra/organisation#scope">scope</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#scopeType"
+            title="http://w3id.org/devops-infra/organisation#scopeType">scope type</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#tenantType"
+            title="http://w3id.org/devops-infra/organisation#tenantType">tenant type</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#accessibleToTenant">
+      <h3>accessible to tenant<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#accessibleToTenant</p>
+      <div class="comment">
+         <span class="markdown">This propety is use to refer to the Tenants for which a Resource or Resource Group (e.g., a Site according to this ontology) is accessible.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Site" title="http://w3id.org/devops-infra/organisation#Site">Site</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Tenant" title="http://w3id.org/devops-infra/organisation#Tenant">Tenant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#managedBy">
+      <h3>managed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#managedBy</p>
+      <div class="comment">
+         <span class="markdown">A scope may be managed by an Organisation (or part of it, e.g., a department)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Scope" title="http://w3id.org/devops-infra/organisation#Scope">Scope</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Organisation"
+                  title="http://w3id.org/devops-infra/organisation#Organisation">Organisation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#scope">
+      <h3>scope<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#scope</p>
+      <div class="comment">
+         <span class="markdown">The Scope where any resource makes sense</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Scope" title="http://w3id.org/devops-infra/organisation#Scope">Scope</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#scopeType">
+      <h3>scope type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#scopeType</p>
+      <div class="comment">
+         <span class="markdown">The type of scope. It can be any of the following, according to the corresponding SKOS Concept Scheme: area, biz, resource, common, etc.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Scope" title="http://w3id.org/devops-infra/organisation#Scope">Scope</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/devops-infra/kos/scope-type" title="http://w3id.org/devops-infra/kos/scope-type">scope type</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#tenantType">
+      <h3>tenant type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#tenantType</p>
+      <div class="comment">
+         <span class="markdown">The type of tenant. Examples of tenants, taken from several cloud providers, are: HWS, AWS, CHINA, EUROPE, RUSSIA, A2, AP, RUSSIA_2, CHINA_NOT_CLOUDSERVICE, FRANCE, etc.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Tenant" title="http://w3id.org/devops-infra/organisation#Tenant">Tenant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/devops-infra/kos/tenant-type" title="http://w3id.org/devops-infra/kos/tenant-type">tenant type</a>)</dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#account"
+            title="http://w3id.org/devops-infra/organisation#account">account</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#default"
+            title="http://w3id.org/devops-infra/organisation#default">
+            <span>default</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#domain" title="http://w3id.org/devops-infra/organisation#domain">domain</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#password"
+            title="http://w3id.org/devops-infra/organisation#password">password</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#priority"
+            title="http://w3id.org/devops-infra/organisation#priority">priority</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#tenantStatus"
+            title="http://w3id.org/devops-infra/organisation#tenantStatus">tenant status</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/organisation#timeZone"
+            title="http://w3id.org/devops-infra/organisation#timeZone">time zone</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#account">
+      <h3>account<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#account</p>
+      <div class="comment">
+         <span class="markdown">The account associated to a tenant</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Tenant" title="http://w3id.org/devops-infra/organisation#Tenant">Tenant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#default">
+      <h3>default<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#default</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Scope" title="http://w3id.org/devops-infra/organisation#Scope">Scope</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#domain">
+      <h3>domain<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#domain</p>
+      <div class="comment">
+         <span class="markdown">The domain of a Tenant. It can be China, Asia, Europe, etc.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Tenant" title="http://w3id.org/devops-infra/organisation#Tenant">Tenant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#password">
+      <h3>password<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#password</p>
+      <div class="comment">
+         <span class="markdown">The password associated to an account for a tenant. This will not be represented in most knoweldge graphs</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Tenant" title="http://w3id.org/devops-infra/organisation#Tenant">Tenant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#priority">
+      <h3>priority<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#priority</p>
+      <div class="comment">
+         <span class="markdown">A priority associated to a specific Scope, which can be useful to determine the level of priority that the managing department or organisation will assign to it in case of problems.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Scope" title="http://w3id.org/devops-infra/organisation#Scope">Scope</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#tenantStatus">
+      <h3>tenant status<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#tenantStatus</p>
+      <div class="comment">
+         <span class="markdown">This property describe the status of a tenant. It may be enabled or disabled. In the future, this may be transformed into a SKOS thesaurus</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Tenant" title="http://w3id.org/devops-infra/organisation#Tenant">Tenant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/organisation#timeZone">
+      <h3>time zone<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/organisation#timeZone</p>
+      <div class="comment">
+         <span class="markdown">Time Zone applicable to a Site</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://w3id.org/devops-infra/organisation#Site" title="http://w3id.org/devops-infra/organisation#Site">Site</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://w3id.org/devops-infra/kos/scope-type" title="http://w3id.org/devops-infra/kos/scope-type">
+            <span>scope type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/devops-infra/kos/tenant-type" title="http://w3id.org/devops-infra/kos/tenant-type">
+            <span>tenant type</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://w3id.org/devops-infra/kos/scope-type">
+      <h3>scope type<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/kos/scope-type</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://w3id.org/devops-infra/kos/tenant-type">
+      <h3>tenant type<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/devops-infra/kos/tenant-type</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</span>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
