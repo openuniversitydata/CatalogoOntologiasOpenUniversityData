@@ -1,4 +1,4 @@
-# UniversidadesAbiertas
+# CatalogoOntologiasOpenUniversityData
 Página web que sostiene todos los vocabularios y SKOS del proyecto UniversiDATA.
 <br>
 <br>
